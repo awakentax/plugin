@@ -1,0 +1,15 @@
+{
+  "name": "awaken",
+  "version": "1.0.0",
+  "description": "Connect Cursor to your Awaken crypto tax workspace to review transactions, investigate missing cost basis, and generate reports.",
+  "author": {
+    "name": "Awaken"
+  },
+  "homepage": "https://awaken.tax/docs",
+  "repository": "https://github.com/awakentax/plugin",
+  "license": "MIT",
+  "keywords": ["awaken", "crypto", "tax", "transactions", "cost-basis", "mcp"],
+  "logo": "assets/awaken.svg",
+  "skills": "skills/",
+  "mcpServers": "mcp.json"
+}

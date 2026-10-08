@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "awaken": {
+      "url": "https://mcp.awaken.tax/mcp",
+      "auth": {
+        "CLIENT_ID": "https://cursor.com/oauth/mcp-client.json",
+        "scopes": ["read", "write"]
+      }
+    }
+  }
+}
