@@ -74,6 +74,20 @@ The package connects directly to Awaken's hosted MCP service. OAuth access is bo
 
 For service details, see [Awaken documentation](https://awaken.tax/docs).
 
+## Gemini CLI
+
+This repository is also a Gemini CLI extension (`gemini-extension.json`):
+
+```bash
+gemini extensions install https://github.com/awakentax/plugin
+```
+
+Gemini CLI asks for an Awaken MCP token: your portfolio ID and API key joined by a colon (`<portfolioId>:<apiKey>`), both shown on **Settings → API Keys** in Awaken. API keys need a Dolphin or Whale plan. Gemini CLI connects with the API key, not OAuth.
+
+## MCP Registry
+
+`server.json` is Awaken's entry in the official MCP Registry, `tax.awaken/awaken`. Publish changes with `mcp-publisher publish` after signing in with the `awaken.tax` domain key.
+
 ## License
 
 Plugin code and instructions are MIT licensed; see [LICENSE](LICENSE). The Awaken logo is an Awaken brand asset and is not covered by the code license. Its source is `https://awaken.tax/docs/awaken-word.svg`.
