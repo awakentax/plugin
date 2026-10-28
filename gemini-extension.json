@@ -1,0 +1,21 @@
+{
+  "name": "awaken",
+  "version": "1.0.0",
+  "description": "Review crypto transactions, cost basis, gains, income and tax reports in your Awaken Tax account.",
+  "mcpServers": {
+    "awaken": {
+      "httpUrl": "https://mcp.awaken.tax/mcp",
+      "headers": {
+        "Authorization": "Bearer ${AWAKEN_MCP_TOKEN}"
+      }
+    }
+  },
+  "settings": [
+    {
+      "name": "Awaken MCP token",
+      "description": "Your portfolio ID and API key joined by a colon (<portfolioId>:<apiKey>). Both are on Awaken Settings > API Keys; API keys need a Dolphin or Whale plan.",
+      "envVar": "AWAKEN_MCP_TOKEN",
+      "sensitive": true
+    }
+  ]
+}

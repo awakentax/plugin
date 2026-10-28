@@ -1,0 +1,37 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "tax.awaken/awaken",
+  "title": "Awaken Tax",
+  "description": "Review crypto transactions, cost basis, gains, income and tax reports in your Awaken Tax account.",
+  "version": "1.0.0",
+  "websiteUrl": "https://awaken.tax/docs/agents",
+  "repository": {
+    "url": "https://github.com/awakentax/plugin",
+    "source": "github",
+    "id": "1409693487"
+  },
+  "icons": [
+    {
+      "src": "https://awaken.tax/favicon.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "180x180"
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.awaken.tax/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Optional. ChatGPT, Claude, Cursor and Grok sign in with OAuth and need no header. Other clients: Bearer <portfolio ID>:<API key> from Awaken Settings > API Keys.",
+          "placeholder": "Bearer <portfolioId>:<apiKey>",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
